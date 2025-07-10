@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@font-face{
+    font-family: 'playfair';
+    src: url('./assets/fonts/PlayfairDisplay-Regular.woff2') format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+  font-family: 'libre';
+  src: url('./assets/fonts/LibreBodoni-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'cinzel';
+  src: url('./assets/fonts/Cinzel-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'italiana';
+  src: url('./assets/fonts/Italiana-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: 'raleway';
+  src: url('./assets/fonts/Raleway-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'quickSand';
+  src: url('./assets/fonts/Quicksand-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'vibes';
+  src: url('./assets/fonts/GreatVibes-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face{
+  font-family: 'roboto';
+  src: url('./assets/fonts/Roboto-Regular.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@theme {
+  
+
+    --color-background: #0e1419;
+    --color-primary:  #78dfea;
+    --color-gray: #7b98b4;
+   
+    /*FONTS*/
+
+    --font-playfair : 'playfair','sans-serif';
+    --font-libre : 'libre','sans-serif';
+    --font-vibes : 'vibes','sans-serif';
+
+    --font-quickSand : 'quickSand','sans-serif';
+    --font-italiana : 'italiana','sans-serif';
+    --font-raleway : 'raleway','sans-serif';
+
+    --font-cinzel : 'cinzel','sans-serif';
+    --font-roboto : 'roboto','sans-serif';
+
+}
+
+@keyframes marquee {
+  0% {transform:translateX(0%);}
+  100% {transform: translateX(-50%);}
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #0e1419;
+}
+
+
+/*INCASE OF CAROUSEL*/
+
+/* hide scrollbar on mobile */
+/*.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}*/
