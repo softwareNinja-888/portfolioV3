@@ -13,8 +13,7 @@ export function Stack(){
 		            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="tailwindcss" className="h-10 w-40" />
                     
   
-                    {/* DUPLICATE OF ABOVER */}
-
+                    {/* DUPLICATE OF ABOVE */}
                     <img src="/react.svg" alt="react" className="h-10 w-40" />
 	                <img src="/django.svg" alt="django" className="h-10 w-40" />
                     <img src="/python.svg" alt="python" className="h-10 w-40" />
