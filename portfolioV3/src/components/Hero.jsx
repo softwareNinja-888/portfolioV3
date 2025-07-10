@@ -47,15 +47,14 @@ greet();
       setDisplayedText(code.slice(0, i));
       i++;
       if (i > code.length) clearInterval(interval);
-    }, 100); // speed of typing (ms per character)
+    }, 100); 
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-40 h-40 sm:w-60 sm:h-60 lg:w-90 lg:h-90 border-4 border-primary rounded-sm bg-transparent ">
-      {/* Typing animation */}
-      <pre className="text-green-400 text-xs font-mono whitespace-pre-wrap px-2 pt-4">
+    <div className="relative w-50 h-50 sm:w-60 sm:h-60 lg:w-90 lg:h-90 border-4 border-primary rounded-sm bg-transparent ">
+      <pre className="text-green-400 text-xs md:text-sm font-mono whitespace-pre-wrap px-2 pt-4">
         {displayedText}
         <motion.span
           className="inline-block bg-green-400 w-[1px] h-4 ml-1 align-middle"

@@ -24,7 +24,7 @@ export function Header() {
       <div className="flex justify-between items-center px-6 lg:px-16 py-6">
         <div className="flex items-center gap-6">
           <Profile />
-          <Line height="h-13" width="w-[1px]" color="bg-primary" className="rotate-10" />
+          <Line height="h-13" width="w-[2px]" color="bg-primary" className="rotate-12" />
         </div>
 
         {/* Desktop nav */}

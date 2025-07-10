@@ -1,8 +1,6 @@
 import { Dot } from "lucide-react";
 import { Line } from "./Header";
 
-import { HeadShot } from './helper/HeadShot';
-
 function Illustration({className}){
 	return (
 		<>
@@ -15,7 +13,7 @@ function Illustration({className}){
 
 export function About() {
   return (
-		<div id='about' className="flex flex-col lg:flex-row lg:px-24 pb-20 gap-[100px] px-5 py-32 text-white">
+		<div id='about' className="flex flex-col lg:flex-row md:px-24 lg:px-24 pb-20 gap-[100px] px-5 py-32 text-white">
 
 	        <Illustration  className="order-2 z-auto h-full flex-1" />
 
