@@ -9,7 +9,7 @@ export function Line({ height = "h-20", color = "bg-gray-300", width = "w-px", c
 export function Header() {
   const links = [
     { id: 0, name: 'About', href: 'about' },
-    { id: 1, name: 'Experience', href: 'experience' },
+    { id: 1, name: 'Experience', href: 'xp' },
     { id: 2, name: 'Tech Stack', href: 'stack' },
     { id: 3, name: 'Projects', href: 'projects' },
     { id: 4, name: 'Contact', href: 'contact' },
