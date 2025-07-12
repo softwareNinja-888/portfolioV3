@@ -50,7 +50,6 @@ function ProjectCard({ project, index }) {
                     <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
                         {project.type}
                     </span>
-                    <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-primary transition-colors duration-200" />
                 </div>
 
                 {/* Project Title */}
@@ -59,8 +58,8 @@ function ProjectCard({ project, index }) {
                 </h3>
 
                 {/* Project Description */}
-                <p className="text-gray-300 text-sm leading-relaxed">
-                    A compliance and buying SAAS for veterinary groups and their practices that I've helped co-found.
+                <p className="text-gray-300 text-sm leading-relaxed font-raleway">
+                    {project.description}
                 </p>
 
                 {/* Technology Stack */}
@@ -118,7 +117,8 @@ export function Projects() {
             link: "https://anton-lily.vercel.app/",
             img: '/projects/mockupAnton.avif',
             type: 'Landing Page',
-            stack: ['react', 'figma', 'tailwindcss',]
+            stack: ['react', 'figma', 'tailwindcss',],
+            description:' A fictional bed and breakfast site built to showcase clean layout, soft visuals, and user focused design with a strong focus on responsiveness.'
         },
         {
             id: 1,
@@ -127,7 +127,8 @@ export function Projects() {
             link: "https://noma-skincare.vercel.app/",
             img: '/projects/mockupGogga.avif',
             type: 'E-commerce',
-			stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',]        
+			stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',],        
+            description:'A minimalist e-commerce site for a fictional skincare brand, focused on product presentation, clean UI, and mobile first performance.'
 		},
         {
             id: 2,
@@ -136,7 +137,8 @@ export function Projects() {
             link: "https://salt-light-blog.vercel.app/",
             img: '/projects/mockupBlog.avif',
             type: 'Blog',
-			stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',]        
+			stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',],        
+            description:'A Full Stack Christian blog where I write and publish Bible based content. Built to reflect my values while showcasing my end-to-end development skills.'
 		},
         {
             id: 3,
@@ -145,7 +147,8 @@ export function Projects() {
             link: "https://waypoint-media.vercel.app/",
             img: '/projects/mockupBluepeak.avif',
             type: 'My Online Business',
-			stack: ['react', 'figma', 'node',, 'tailwindcss',]        
+			stack: ['react', 'figma', 'node',, 'tailwindcss',],        
+            description:'My business site offering websites and landing pages for small businesses. Designed to highlight my services, process, and results driven approach.'
         },
         {
             id: 4,
@@ -154,7 +157,8 @@ export function Projects() {
             link: "https://gogga-landing.vercel.app/",
             img: '/projects/mockupGogga.avif',
             type: 'Landing Page',
-			stack: ['react', 'figma', 'node', 'tailwindcss',]        
+			stack: ['react', 'figma', 'node', 'tailwindcss',],        
+            description:"A showcase site for a real lodge, built to demonstrate how strong design and structure can boost bookings and reflect the brand’s unique charm."
         },
     ];
 
@@ -191,7 +195,7 @@ export function Projects() {
                             className="group inline-flex items-center gap-2 bg-primary text-black px-6 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 font-medium hover:scale-105"
                         >
                             <Github className="w-5 h-5" />
-                            View All on GitHub
+                            View All On GitHub
                             <MoveUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                         </a>
                     </motion.div>

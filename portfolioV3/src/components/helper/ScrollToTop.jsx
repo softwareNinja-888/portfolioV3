@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
+import { ChevronUp } from "lucide-react";
 
 export function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +28,7 @@ export function ScrollToTop() {
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
-      <FaArrowUp size={26} />
+      <ChevronUp size={26} />
     </button>
   );
 };
