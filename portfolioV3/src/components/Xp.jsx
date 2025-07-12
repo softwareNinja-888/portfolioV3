@@ -25,7 +25,7 @@ function ExperienceCard({ experience, index }) {
                     {/* Date badge */}
                     <div className="flex items-center gap-2 mb-4">
                         <Calendar className="w-4 h-4 text-primary" />
-                        <span className="text-primary font-medium text-sm bg-primary/10 px-3 py-1 rounded-full">
+                        <span className="text-primary font-raleway text-sm bg-primary/10 px-3 py-1 rounded-full">
                             {experience.date}
                         </span>
                     </div>
@@ -33,7 +33,7 @@ function ExperienceCard({ experience, index }) {
                     {/* Job title */}
                     <div className="flex items-center gap-3 mb-4">
                         <Briefcase className="w-5 h-5 text-primary" />
-                        <h3 className="text-2xl font-bold text-white">
+                        <h3 className="text-2xl font-roboto text-white">
                             {experience.name}
                         </h3>
                     </div>
@@ -42,26 +42,26 @@ function ExperienceCard({ experience, index }) {
                     {experience.company && (
                         <div className="flex items-center gap-2 mb-4">
                             <MapPin className="w-4 h-4 text-gray-400" />
-                            <span className="text-gray-400 font-medium">
+                            <span className="text-gray-400 font-quickSand">
                                 {experience.company}
                             </span>
                         </div>
                     )}
                     
                     {/* Description */}
-                    <p className="text-gray-300 leading-relaxed">
+                    <p className="text-gray-300 leading-relaxed font-raleway">
                         {experience.description}
                     </p>
                     
                     {/* Skills/Technologies used */}
                     {experience.skills && (
                         <div className="mt-6">
-                            <h4 className="text-sm font-medium text-gray-400 mb-3">Key Skills:</h4>
+                            <h4 className="text-sm font-medium text-gray-400 mb-3 font-raleway">Key Skills:</h4>
                             <div className="flex flex-wrap gap-2">
                                 {experience.skills.map((skill, skillIndex) => (
                                     <span 
                                         key={skillIndex}
-                                        className="text-xs bg-gray-800 text-gray-300 px-3 py-1 rounded-full hover:bg-primary/20 hover:text-primary transition-colors duration-200"
+                                        className="font-roboto text-xs bg-gray-800 text-gray-300 px-3 py-1 rounded-full hover:bg-primary/20 hover:text-primary transition-colors duration-200"
                                     >
                                         {skill}
                                     </span>
@@ -73,12 +73,12 @@ function ExperienceCard({ experience, index }) {
                     {/* Achievements */}
                     {experience.achievements && (
                         <div className="mt-6">
-                            <h4 className="text-sm font-medium text-gray-400 mb-3">Key Achievements:</h4>
+                            <h4 className="text-sm font-medium text-gray-400 mb-3 font-raleway">Key Achievements:</h4>
                             <ul className="space-y-2">
                                 {experience.achievements.map((achievement, achievementIndex) => (
                                     <li 
                                         key={achievementIndex}
-                                        className="flex items-start gap-2 text-gray-300 text-sm"
+                                        className="flex items-start gap-2 text-gray-300 text-sm font-raleway"
                                     >
                                         <span className="text-primary mt-1">•</span>
                                         {achievement}
@@ -97,14 +97,13 @@ export function Xp() {
     const xp = [
         {
             id: 0,
-            name: 'Full Stack Developer',
+            name: 'Freelancer',
             company: 'Freelancer',
-            date: 'Jan 2022 - Present',
-            description: "When I'm not coding away, I'm probably exploring the latest web design trends or experimenting with new techniques. I believe in keeping things simple yet impactful, creating solutions that not only look great but perform exceptionally well.",
-            skills: ['React', 'Node.js', 'TypeScript', 'Next.js', 'Tailwind CSS', 'PostgreSQL'],
+            date: 'June 2023 - Present',
+            description: "During this time, I worked independently with small businesses to design and build custom landing pages and websites. Most of my projects came through Local businesses and Upwork, where I focused on delivering clean, responsive interfaces using React and Tailwind CSS. I also helped clients improve their online presence and user experience through modern design and performance focused development.",
+            skills: ['React','Wordpress', 'Node.js', 'Tailwind CSS','SEO',],
             achievements: [
-                'Delivered 15+ successful web applications for clients',
-                'Increased client conversion rates by 40% through optimized UX',
+                'Assiting Local businesses on Upwork',
                 'Specialized in modern React ecosystem and full-stack development'
             ]
         },
@@ -112,28 +111,16 @@ export function Xp() {
             id: 1,
             name: 'Co-Founder & CTO',
             company: 'BluePeak Media',
-            date: 'Mar 2023 - Present',
-            description: "Leading technical strategy and development for a digital agency focused on delivering cutting-edge web solutions. Building scalable applications and mentoring junior developers while driving innovation in web technologies.",
-            skills: ['Leadership', 'System Architecture', 'DevOps', 'Team Management', 'AWS', 'Docker'],
+            date: 'Feb 2025 - Present',
+            description: "At BluePeak Media, I lead the technical direction of our digital marketing efforts, helping brands grow their online presence through modern, high-converting websites. I work closely with the creative team to turn marketing strategies into fast, user-friendly digital experiences. From building custom landing pages to optimizing performance, my role bridges design and development to support our clients' growth.",
+            skills: ['Leadership', 'SEO', 'Conversion Optimization', 'Team Management', 'React', 'Tailwind CSS'],
             achievements: [
-                'Built and led a team of 5 developers',
-                'Architected scalable solutions serving 10k+ users',
-                'Reduced deployment time by 60% through CI/CD implementation'
+                'Built and led a team of 5 freelancers',
+                'Helped clients double website traffic within months of launch',
+                'Implemented SEO and performance best practices across all web projects',
+                'Established internal systems to streamline web project delivery',
             ]
         },
-        {
-            id: 2,
-            name: 'Frontend Developer',
-            company: 'Tech Startup',
-            date: 'Jun 2021 - Dec 2021',
-            description: "Focused on creating beautiful, responsive user interfaces using modern frontend technologies. Collaborated with designers and backend developers to bring innovative ideas to life.",
-            skills: ['React', 'Vue.js', 'SASS', 'JavaScript', 'Figma', 'Git'],
-            achievements: [
-                'Improved page load times by 35% through optimization',
-                'Developed reusable component library used across 3 projects',
-                'Implemented pixel-perfect designs from Figma mockups'
-            ]
-        }
     ];
 
     return (
@@ -148,10 +135,10 @@ export function Xp() {
                     className="text-center mb-20"
                 >
                     <div className="flex items-center justify-center gap-3 mb-4">
-                        <span className="text-primary text-2xl font-bold">#4.</span>
+                        <span className="text-primary text-2xl font-bold">#2.</span>
                         <h2 className="text-4xl font-bold text-white">Experience</h2>
                     </div>
-                    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                    <p className="text-gray-400 max-w-2xl mx-auto text-lg font-quickSand">
                         My journey through different roles and companies, building expertise in 
                         modern web development and leading innovative projects.
                     </p>
@@ -184,15 +171,15 @@ export function Xp() {
                     className="text-center mt-20"
                 >
                     <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-8 border border-gray-700">
-                        <h3 className="text-2xl font-bold text-white mb-4">Ready to work together?</h3>
-                        <p className="text-gray-400 mb-6">
+                        <h3 className="text-2xl font-bold text-white mb-4 font-roboto">Ready to work together?</h3>
+                        <p className="text-gray-400 mb-6 font-quickSand">
                             I'm always open to discussing new opportunities and exciting projects.
                         </p>
                         <motion.a
                             href="#contact"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center gap-2 bg-primary text-black px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors duration-300 font-medium"
+                            className="inline-flex items-center gap-2 bg-primary text-black px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors duration-300 font-raleway"
                         >
                             <Briefcase className="w-5 h-5" />
                             Let's Connect

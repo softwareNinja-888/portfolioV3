@@ -18,8 +18,8 @@ function App() {
       <Hero/>
       <Stack/>
       <About/>
-      <Projects/>
       <Xp/>
+      <Projects/>
       <Footer/>
     </>
   )
