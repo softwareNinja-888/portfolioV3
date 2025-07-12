@@ -13,9 +13,9 @@ function Illustration({className}){
 
 export function About() {
   return (
-		<div id='about' className="flex flex-col lg:flex-row md:px-24 lg:px-24 pb-20 gap-[100px] px-5 py-32 text-white">
+		<div id='about' className="flex flex-col lg:flex-row md:px-24 lg:px-24 pb-20 gap-[100px] px-5 py-32 text-white justify-center items-center">
 
-	        <Illustration  className="order-2 z-auto h-full flex-1" />
+	        <Illustration  className="order-2 z-auto h-full flex-1 " />
 
 	        <div className="flex flex-col w-full lg:w-1/2 order-1">
 	          <div className="flex items-center gap-5 ">
