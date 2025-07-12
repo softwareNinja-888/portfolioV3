@@ -89,7 +89,7 @@ function ProjectCard({ project, index }) {
                         href={project.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex-1 flex items-center justify-center gap-2 py-2 bg-primary text-black rounded-lg hover:bg-primary/90 transition-colors duration-200 font-medium text-sm"
+                        className="flex-1 flex items-center justify-center gap-2 py-2 bg-primary text-black rounded-lg hover:bg-primary/90 transition-colors duration-200 font-mediu`m text-sm"
                     >
                         View Live
                         <ExternalLink className="w-4 h-4" />
@@ -118,7 +118,7 @@ export function Projects() {
             link: "https://anton-lily.vercel.app/",
             img: '/projects/mockupAnton.avif',
             type: 'Landing Page',
-            stack: ['react', 'figma', 'node', 'python']
+            stack: ['react', 'figma', 'tailwindcss',]
         },
         {
             id: 1,
@@ -127,7 +127,7 @@ export function Projects() {
             link: "https://noma-skincare.vercel.app/",
             img: '/projects/mockupGogga.avif',
             type: 'E-commerce',
-			stack: ['react', 'figma', 'node', 'python']        
+			stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',]        
 		},
         {
             id: 2,
@@ -136,7 +136,7 @@ export function Projects() {
             link: "https://salt-light-blog.vercel.app/",
             img: '/projects/mockupBlog.avif',
             type: 'Blog',
-			stack: ['react', 'figma', 'node', 'python']        
+			stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',]        
 		},
         {
             id: 3,
@@ -145,7 +145,7 @@ export function Projects() {
             link: "https://waypoint-media.vercel.app/",
             img: '/projects/mockupBluepeak.avif',
             type: 'My Online Business',
-			stack: ['react', 'figma', 'node', 'python']        
+			stack: ['react', 'figma', 'node',, 'tailwindcss',]        
         },
         {
             id: 4,
@@ -154,7 +154,7 @@ export function Projects() {
             link: "https://gogga-landing.vercel.app/",
             img: '/projects/mockupGogga.avif',
             type: 'Landing Page',
-			stack: ['react', 'figma', 'node', 'python']        
+			stack: ['react', 'figma', 'node', 'tailwindcss',]        
         },
     ];
 
@@ -170,10 +170,10 @@ export function Projects() {
                     className="text-center mb-16"
                 >
                     <div className="flex items-center justify-center gap-3 mb-4">
-                        <span className="text-primary text-2xl font-bold">#2.</span>
-                        <h2 className="text-4xl font-bold text-white">My Projects</h2>
+                        <span className="text-primary text-2xl font-mono">#2.</span>
+                        <h2 className="text-4xl font-roboto font-bold text-white">My Projects</h2>
                     </div>
-                    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                    <p className="text-gray-400 max-w-2xl mx-auto text-lg font-quickSand">
                         Here are some of my favorite projects that showcase my skills and passion for creating 
                         beautiful, functional web applications.
                     </p>

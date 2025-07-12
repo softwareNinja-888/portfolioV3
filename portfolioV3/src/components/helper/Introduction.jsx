@@ -54,11 +54,10 @@ export function Introduction() {
           </div>
 
           <motion.div
-            onClick={() => toSection("contact")}
             className="mt-8 flex justify-center lg:justify-start"
             variants={itemVariants}
           >
-            <Button  text="Get In Touch " width='w-52' classNew="font-raleway hover:bg-transparent hover:rounded-lg transition-all duration-500 hover:scale-105 py-3"/>
+            <Button onClick={() => toSection("contact")} text="Get In Touch " width='w-52' classNew="font-raleway hover:bg-transparent hover:rounded-lg transition-all duration-500 hover:scale-105 py-3"/>
           </motion.div>
         </motion.div>
       </div>

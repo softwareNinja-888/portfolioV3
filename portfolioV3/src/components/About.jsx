@@ -19,8 +19,8 @@ export function About() {
 
 	        <div className="flex flex-col w-full lg:w-1/2 order-1">
 	          <div className="flex items-center gap-5 ">
-	            <p className="text-3xl text-primary font-roboto">{`#1.`}</p>
-	            <p className="text-3xl  font-roboto">About Me</p>
+	            <p className="text-3xl text-primary font-mono">{`#1.`}</p>
+	            <p className="text-3xl  font-roboto font-bold">About Me</p>
 	          </div>
 	          <hr
 	            className="w-12/12 h-2 self-center  my-4 text-primary  bg-primary "

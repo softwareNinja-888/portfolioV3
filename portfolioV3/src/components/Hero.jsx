@@ -10,25 +10,6 @@ export function Line({ height = "h-20", color = "bg-gray-300", width = "w-px", c
   return <div className={`mx-auto ${width} ${height} ${color} ${className}`}></div>;
 }
 
-export function FramedImagePlaceholder() {
-  return (
-    <div className="relative w-40 h-40 sm:w-60 sm:h-60 lg:w-90 lg:h-90 border-4 border-primary rounded-sm bg-transparent ">
-      {/* Code typing animation */}
-      <pre className="text-green-400 text-xs font-mono whitespace-pre-wrap overflow-hidden [animation:typing_3s_steps(30,end)_infinite] [width:100%] py-10 px-2">
-          {`const greet = () => {
-            console.log("Hello, world!");
-          };`}
-      </pre> <span className="inline-block bg-green-400 w-[1px] h-4 ml-1 align-middle animate-pulse"></span>
-
-
-      {/* Floating icon */}
-      <div className="absolute -bottom-4 -right-4 bg-bg px-1 py-1 rounded">
-        <CodeXml className="text-teal-400 w-8 h-8 rotate-10" />
-      </div>
-    </div>
-
-  );
-}
 
 export function CodeBox() {
   const code = `const greet = () => {
@@ -76,7 +57,6 @@ export function Hero() {
     <div className="flex flex-col lg:flex-row justify-center items-center gap-0 py-16 px-4 lg:px-16">
       {/* Image Section */}
       <div className="w-full lg:w-1/2 flex justify-center ">
-        {/*<FramedImagePlaceholder />*/}
         <CodeBox/>
       </div>
 
