@@ -1,6 +1,6 @@
 export function Profile({
   name = "Bayanda Dlamini",
-  position = "Front-end Developer",
+  position = "Full Stack Developer",
   img = "profile.jpg",
 }) {
   return (

@@ -9,9 +9,10 @@ export function Line({ height = "h-20", color = "bg-gray-300", width = "w-px", c
 export function Header() {
   const links = [
     { id: 0, name: 'About', href: 'about' },
-    { id: 3, name: 'Projects', href: 'projects' },
+    { id: 4, name: 'Tech Stack', href: 'tech' },
     { id: 1, name: 'Experience', href: 'xp' },
-    { id: 4, name: 'Contact', href: 'contact' },
+    { id: 2, name: 'Projects', href: 'projects' },
+    { id: 3, name: 'Contact', href: 'contact' },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);

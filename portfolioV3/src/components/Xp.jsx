@@ -109,7 +109,7 @@ export function Xp() {
         },
         {
             id: 1,
-            name: 'Co-Founder & CTO',
+            name: 'Founder',
             company: 'BluePeak Media',
             date: 'Feb 2025 - Present',
             description: "At BluePeak Media, I lead the technical direction of our digital marketing efforts, helping brands grow their online presence through modern, high-converting websites. I work closely with the creative team to turn marketing strategies into fast, user-friendly digital experiences. From building custom landing pages to optimizing performance, my role bridges design and development to support our clients' growth.",
@@ -135,11 +135,11 @@ export function Xp() {
                     className="text-center mb-20"
                 >
                     <div className="flex items-center justify-center gap-3 mb-4">
-                        <span className="text-primary text-2xl font-bold">#2.</span>
-                        <h2 className="text-4xl font-bold text-white">Experience</h2>
+                        <span className="text-primary text-2xl font-mono">#3.</span>
+                        <h2 className="text-4xl font-roboto font-bold text-white">Experience</h2>
                     </div>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg font-quickSand">
-                        My journey through different roles and companies, building expertise in 
+                        My journey through different roles, building expertise in 
                         modern web development and leading innovative projects.
                     </p>
                 </motion.div>

@@ -46,7 +46,7 @@ export function Introduction() {
             variants={itemVariants}
             className="text-[16px] sm:text-[18px] text-white/70 font-quickSand"
           >
-            Front-end Developer
+            Full Stack Developer
           </motion.span>
 
           <div className="w-24 mt-4 mx-auto lg:mx-0">

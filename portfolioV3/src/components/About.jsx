@@ -28,7 +28,7 @@ export function About() {
 	          />
 	          <div className="flex flex-col mt-4 font-mont gap-5">
 	            <div className="text-md font-space">
-	              Hello! I'm Bayanda, a Passionate Front-End Developer.
+	              Hello! I'm Bayanda, a Full Stack Developer.
 	            </div>
 	            <div className="flex flex-col text-md font-mont ">
 	              <span className="mb-6">

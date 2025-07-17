@@ -9,7 +9,7 @@ function ProjectCard({ project, index }) {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
             whileHover={{ y: -10 }}
-            className="group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-primary/50 transition-all duration-500 shadow-xl hover:shadow-2xl"
+            className={`${project.show ? '' : 'hidden'} group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-primary/50 transition-all duration-500 shadow-xl hover:shadow-2xl`}
         >
             {/* Project Image */}
             <div className="relative overflow-hidden">
@@ -110,6 +110,30 @@ function ProjectCard({ project, index }) {
 export function Projects() {
     // PROJECTS TO SHOWCASE:
     const projects = [
+
+         {
+            id: 2,
+            name: "Salt&Light Blog",
+            github: "https://github.com/softwareNinja-888/salt_light_blog",
+            link: "https://salt-light-blog.vercel.app/",
+            img: '/projects/mockupBlog.avif',
+            type: 'Full Stack Blog',
+            stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',],        
+            description:'A Full Stack Christian blog where I write and publish Bible based content. Built to reflect my values while showcasing my end-to-end development skills.',
+            show:true
+        },
+        {
+            id: 3,
+            name: "BluePeak Media",
+            github: "https://github.com/softwareNinja-888/waypointMedia",
+            link: "https://waypoint-media.vercel.app/",
+            img: '/projects/mockupBluepeak.avif',
+            type: 'My Online Business',
+            stack: ['react', 'figma', 'node',, 'tailwindcss',],        
+            description:'My business site offering websites and landing pages for small businesses. Designed to highlight my services, process, and results driven approach.',
+            show:true
+
+        },
         {
             id: 0,
             name: "Anton & Lily",
@@ -118,7 +142,8 @@ export function Projects() {
             img: '/projects/mockupAnton.avif',
             type: 'Landing Page',
             stack: ['react', 'figma', 'tailwindcss',],
-            description:' A fictional bed and breakfast site built to showcase clean layout, soft visuals, and user focused design with a strong focus on responsiveness.'
+            description:' A fictional bed and breakfast site built to showcase clean layout, soft visuals, and user focused design with a strong focus on responsiveness.',
+            show:true
         },
         {
             id: 1,
@@ -128,28 +153,9 @@ export function Projects() {
             img: '/projects/mockupGogga.avif',
             type: 'E-commerce',
 			stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',],        
-            description:'A minimalist e-commerce site for a fictional skincare brand, focused on product presentation, clean UI, and mobile first performance.'
+            description:'A minimalist e-commerce site for a fictional skincare brand, focused on product presentation, clean UI, and mobile first performance.',
+            show:false
 		},
-        {
-            id: 2,
-            name: "Salt&Light Blog",
-            github: "https://github.com/softwareNinja-888/salt_light_blog",
-            link: "https://salt-light-blog.vercel.app/",
-            img: '/projects/mockupBlog.avif',
-            type: 'Blog',
-			stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',],        
-            description:'A Full Stack Christian blog where I write and publish Bible based content. Built to reflect my values while showcasing my end-to-end development skills.'
-		},
-        {
-            id: 3,
-            name: "BluePeak Media",
-            github: "https://github.com/softwareNinja-888/waypointMedia",
-            link: "https://waypoint-media.vercel.app/",
-            img: '/projects/mockupBluepeak.avif',
-            type: 'My Online Business',
-			stack: ['react', 'figma', 'node',, 'tailwindcss',],        
-            description:'My business site offering websites and landing pages for small businesses. Designed to highlight my services, process, and results driven approach.'
-        },
         {
             id: 4,
             name: "Goggas Nest",
@@ -158,7 +164,9 @@ export function Projects() {
             img: '/projects/mockupGogga.avif',
             type: 'Landing Page',
 			stack: ['react', 'figma', 'node', 'tailwindcss',],        
-            description:"A showcase site for a real lodge, built to demonstrate how strong design and structure can boost bookings and reflect the brand’s unique charm."
+            description:"A showcase site for a real lodge, built to demonstrate how strong design and structure can boost bookings and reflect the brand’s unique charm.",
+            show:true
+
         },
     ];
 
@@ -174,7 +182,7 @@ export function Projects() {
                     className="text-center mb-16"
                 >
                     <div className="flex items-center justify-center gap-3 mb-4">
-                        <span className="text-primary text-2xl font-mono">#3.</span>
+                        <span className="text-primary text-2xl font-mono">#4.</span>
                         <h2 className="text-4xl font-roboto font-bold text-white">My Projects</h2>
                     </div>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg font-quickSand">
