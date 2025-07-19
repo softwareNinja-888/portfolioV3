@@ -12,10 +12,9 @@ export function Line({ height = "h-20", color = "bg-gray-300", width = "w-px", c
 
 
 export function CodeBox() {
-  const code = `const greet = () => {
-  console.log("Hello, world!");
-
-  };
+  const code = `function greet() {
+    console.log("Hello, world!");
+};
 
 greet();
 `;

@@ -49,10 +49,10 @@ export function TechStack(){
 
   return (
     <>
-        <div id="tech" className="max-w-4xl mx-auto my-20">
+        <div id="tech" className="md:px-24 lg:px-24 px-5 max-w-4xl mx-auto my-20">
           <div className="text-center mb-20">
               <div className="flex items-center justify-center gap-3 mb-4">
-                  <span className="text-primary text-2xl font-mono">#2.</span>
+                  <span className="text-primary text-2xl font-quickSand">#2.</span>
                   <h2 className="text-4xl font-roboto text-white">Tech Stack</h2>
               </div>
               <p className="text-gray-400 max-w-2xl mx-auto text-lg font-quickSand">
@@ -62,7 +62,7 @@ export function TechStack(){
 
           {techStack.map((category) => (
             <div key={category.category} className="mb-12">
-              <h2 className="text-2xl font-roboto text-white mb-8">{category.category}</h2>
+              {/*<h2 className="text-2xl font-roboto text-white mb-8">{category.category}</h2>*/}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {category.items.map((tech) => (
                   <div 

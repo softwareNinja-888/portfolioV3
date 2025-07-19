@@ -19,7 +19,7 @@ export function About() {
 
 	        <div className="flex flex-col w-full lg:w-1/2 order-1">
 	          <div className="flex items-center gap-5 ">
-	            <p className="text-3xl text-primary font-mono">{`#1.`}</p>
+	            <p className="text-3xl text-primary font-quickSand">{`#1.`}</p>
 	            <p className="text-3xl  font-roboto font-bold">About Me</p>
 	          </div>
 	          <hr
@@ -27,15 +27,15 @@ export function About() {
 	            style={{ transform: 'scaleY(0.5)' }}
 	          />
 	          <div className="flex flex-col mt-4 font-mont gap-5">
-	            <div className="text-md font-space">
+	            <div className="text-md font-roboto">
 	              Hello! I'm Bayanda, a Full Stack Developer.
 	            </div>
-	            <div className="flex flex-col text-md font-mont ">
-	              <span className="mb-6">
-	              I have a passion for  turning ideas into beautiful, functional websites. My sweet spot is crafting eye-catching landing pages that help businesses make that perfect first impression online. Every pixel matters to me, and I take pride in balancing stunning design with smooth, intuitive user experiences.
+	            <div className="flex flex-col text-md font-roboto ">
+			        <span className="mb-6">
+	              I love building complete web applications from the ground up. My sweet spot is creating full-stack solutions that look great and work seamlessly behind the scenes. I get excited about both crafting clean, intuitive interfaces and architecting solid backend systems that power them.
 	              </span>
 	              <span>
-	                When I'm not coding away, I'm probably exploring the latest web design trends or experimenting with new techniques. I believe in keeping things simple yet impactful – if you're looking for someone to bring your web presence to life, I'd love to chat about how we can make that happen together.
+	                When I'm not coding, I'm usually diving into new frameworks or exploring with different tech stacks. I believe in building things that are both powerful under the hood and clean on the surface. If you're looking for someone to bring your project to life from database to deployment, I'd be excited to chat about making that happen together.
 	             </span>
 	            </div>
 	          </div>

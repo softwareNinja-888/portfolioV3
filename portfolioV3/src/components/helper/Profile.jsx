@@ -1,10 +1,10 @@
 export function Profile({
   name = "Bayanda Dlamini",
   position = "Full Stack Developer",
-  img = "profile.jpg",
+  img = "profile.avif",
 }) {
   return (
-    <div className="flex items-center gap-4">
+    <a href="#about" className="flex items-center gap-4 cursor-pointer">
       <img
         src={img}
         alt="profile picture"
@@ -14,6 +14,6 @@ export function Profile({
         <div className="text-sm font-roboto">{name}</div>
         <div className="text-xs text-white/70 font-quickSand">{position}</div>
       </div>
-    </div>
+    </a>
   );
 }

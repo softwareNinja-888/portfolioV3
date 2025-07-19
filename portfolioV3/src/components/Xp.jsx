@@ -135,7 +135,7 @@ export function Xp() {
                     className="text-center mb-20"
                 >
                     <div className="flex items-center justify-center gap-3 mb-4">
-                        <span className="text-primary text-2xl font-mono">#3.</span>
+                        <span className="text-primary text-2xl font-quickSand">#3.</span>
                         <h2 className="text-4xl font-roboto font-bold text-white">Experience</h2>
                     </div>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg font-quickSand">

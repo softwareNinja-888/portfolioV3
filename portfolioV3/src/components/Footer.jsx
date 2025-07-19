@@ -104,7 +104,7 @@ export function Footer() {
                     className="text-center mb-16"
                 >
                     <div className="flex items-center justify-center gap-3 mb-4">
-                        <span className="text-primary text-2xl font-mono">#5.</span>
+                        <span className="text-primary text-2xl font-quickSand">#5.</span>
                         <h2 className="text-4xl font-roboto font-bold text-white">Get In Touch</h2>
                     </div>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg mb-12">

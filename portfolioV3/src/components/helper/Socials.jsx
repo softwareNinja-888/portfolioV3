@@ -40,7 +40,6 @@ export function Socials() {
       <SocialIcons path={<Github className="w-4 h-4 text-primary" />} socialLink='https://github.com/softwareNinja-888'/>
       <SocialIcons path={<Mail className="w-4 h-4 text-primary" />} socialLink='mailto:webdev.bybayanda@gmail.com'/>
       <SocialIcons path={<Linkedin className="w-4 h-4 text-primary"/>} socialLink='https://www.linkedin.com/in/bayanda-dlamini'/>
-      <SocialIcons path="/upwork.svg" socialLink='https://www.upwork.com/freelancers/~01b74166653b9370d1?mp_source=share'/>
     </nav>
   );
 };

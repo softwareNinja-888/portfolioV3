@@ -8,7 +8,6 @@ function ProjectCard({ project, index }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-            whileHover={{ y: -10 }}
             className={`${project.show ? '' : 'hidden'} group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-primary/50 transition-all duration-500 shadow-xl hover:shadow-2xl`}
         >
             {/* Project Image */}
@@ -171,7 +170,7 @@ export function Projects() {
     ];
 
     return (
-        <section id="projects" className="py-20 bg-bg">
+        <section id="projects" className="md:px-8 lg:px-8 px-5 py-20 bg-bg">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Section Header */}
                 <motion.div
@@ -182,7 +181,7 @@ export function Projects() {
                     className="text-center mb-16"
                 >
                     <div className="flex items-center justify-center gap-3 mb-4">
-                        <span className="text-primary text-2xl font-mono">#4.</span>
+                        <span className="text-primary text-2xl font-quickSand">#4.</span>
                         <h2 className="text-4xl font-roboto font-bold text-white">My Projects</h2>
                     </div>
                     <p className="text-gray-400 max-w-2xl mx-auto text-lg font-quickSand">
