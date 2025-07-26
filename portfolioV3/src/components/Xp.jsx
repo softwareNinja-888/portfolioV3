@@ -17,7 +17,7 @@ function ExperienceCard({ experience, index }) {
             <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-gray-950 z-10 hidden lg:block" />
             
             {/* Experience card */}
-            <div className={`relative md:w-8/12 lg:w-5/12 md:mx-auto ${index % 2 === 0 ? 'lg:ml-0 lg:mr-auto ' : 'lg:ml-auto lg:mr-0 '}`}>
+            <div className={`relative w-12/12 md:w-8/12 lg:w-5/12 md:mx-auto ${index % 2 === 0 ? 'lg:ml-0 lg:mr-auto ' : 'lg:ml-auto lg:mr-0 '}`}>
                 <motion.div
                     whileHover={{ scale: 1.02, y: -5 }}
                     className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-primary/50 transition-all duration-300 shadow-xl hover:shadow-2xl"
@@ -155,7 +155,7 @@ export function Xp() {
                             <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-gray-950 z-10 hidden" />
                             
                             {/* Mobile layout adjustment */}
-                            <div className="pl-16 md:pl-0">
+                            <div className="mx-auto w-11/12">
                                 <ExperienceCard experience={experience} index={index} />
                             </div>
                         </div>
