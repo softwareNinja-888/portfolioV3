@@ -23,6 +23,7 @@ function ProjectCard({ project, index }) {
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="flex gap-3">
                         <a 
+                            
                             href={project.link} 
                             target="_blank" 
                             rel="noopener noreferrer"
