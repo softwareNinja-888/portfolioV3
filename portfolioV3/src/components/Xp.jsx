@@ -11,13 +11,13 @@ function ExperienceCard({ experience, index }) {
             className="relative"
         >
             {/* Timeline connector */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-to-b from-primary to-transparent hidden md:block" />
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-to-b from-primary to-transparent hidden lg:block" />
             
             {/* Timeline dot */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-gray-950 z-10 hidden md:block" />
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-gray-950 z-10 hidden lg:block" />
             
             {/* Experience card */}
-            <div className={`relative md:w-5/12 ${index % 2 === 0 ? 'md:ml-0 md:mr-auto' : 'md:ml-auto md:mr-0'}`}>
+            <div className={`relative md:w-8/12 lg:w-5/12 md:mx-auto ${index % 2 === 0 ? 'lg:ml-0 lg:mr-auto ' : 'lg:ml-auto lg:mr-0 '}`}>
                 <motion.div
                     whileHover={{ scale: 1.02, y: -5 }}
                     className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-primary/50 transition-all duration-300 shadow-xl hover:shadow-2xl"
@@ -147,12 +147,12 @@ export function Xp() {
                 {/* Timeline */}
                 <div className="relative space-y-16">
                     {/* Timeline line for mobile */}
-                    <div className="absolute left-8 top-0 w-px h-full bg-gradient-to-b from-primary via-primary/50 to-transparent md:hidden" />
+                    <div className="absolute left-8 top-0 w-px h-full bg-gradient-to-b from-primary via-primary/50 to-transparent hidden" />
                     
                     {xp.map((experience, index) => (
                         <div key={experience.id} className="relative">
                             {/* Mobile timeline dot */}
-                            <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-gray-950 z-10 md:hidden" />
+                            <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-gray-950 z-10 hidden" />
                             
                             {/* Mobile layout adjustment */}
                             <div className="pl-16 md:pl-0">
