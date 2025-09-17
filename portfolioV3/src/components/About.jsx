@@ -27,15 +27,15 @@ export function About() {
 	            style={{ transform: 'scaleY(0.5)' }}
 	          />
 	          <div className="flex flex-col mt-4 font-mont gap-5">
-	            <div className="text-md font-roboto">
+	            {/*<div className="text-md font-roboto">
 	              Hello! I'm Bayanda, a Full Stack Developer.
-	            </div>
+	            </div>*/}
 	            <div className="flex flex-col text-md font-roboto ">
 			        <span className="mb-6">
-	              I love building complete web applications from the ground up. My sweet spot is creating full-stack solutions that look great and work seamlessly behind the scenes. I get excited about both crafting clean, intuitive interfaces and architecting solid backend systems that power them.
+	              I'm passionate about crafting web applications that work beautifully from start to finish. My journey began in frontend development, creating websites that solve real problems for businesses and individuals.Now I'm expanding into backend development to become a full-stack developer. I'm also exploring machine learning and AI because I love learning new technologies that can make a real impact.
 	              </span>
 	              <span>
-	                When I'm not coding, I'm usually diving into new frameworks or exploring with different tech stacks. I believe in building things that are both powerful under the hood and clean on the surface. If you're looking for someone to bring your project to life from database to deployment, I'd be excited to chat about making that happen together.
+	                My philosophy is simple, build things that are as solid as they are beautiful. Clean code that users love, powerful systems that just work. If you have a project that needs someone who cares about both the big picture and the details from database to deployment let's talk. I'd love to help bring your ideas to life.
 	             </span>
 	            </div>
 	          </div>

@@ -46,9 +46,12 @@ function ProjectCard({ project, index }) {
             {/* Project Info */}
             <div className="p-6 space-y-4">
                 {/* Project Type Badge */}
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col md:flex-row gap-2 md:gap-0 md:items-center justify-between">
                     <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
                         {project.type}
+                    </span>
+                     <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
+                        {project.development ? 'Work in progress' : ''}
                     </span>
                 </div>
 
@@ -56,6 +59,7 @@ function ProjectCard({ project, index }) {
                 <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors duration-200">
                     {project.name}
                 </h3>
+                
 
                 {/* Project Description */}
                 <p className="text-gray-300 text-sm leading-relaxed font-raleway">
@@ -111,17 +115,7 @@ export function Projects() {
     // PROJECTS TO SHOWCASE:
     const projects = [
 
-         {
-            id: 2,
-            name: "Salt&Light Blog",
-            github: "https://github.com/softwareNinja-888/salt_light_blog",
-            link: "https://salt-light-blog.vercel.app/",
-            img: '/projects/mockupBlog.avif',
-            type: 'Full Stack Blog',
-            stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',],        
-            description:'A Full Stack Christian blog where I write and publish Bible based content. Built to reflect my values while showcasing my end-to-end development skills.',
-            show:true
-        },
+        
         {
             id: 3,
             name: "BluePeak Media",
@@ -131,7 +125,8 @@ export function Projects() {
             type: 'My Online Business',
             stack: ['react', 'figma', 'node',, 'tailwindcss',],        
             description:'My business site offering websites and landing pages for small businesses. Designed to highlight my services, process, and results driven approach.',
-            show:true
+            show:true,
+            development:false
 
         },
         {
@@ -143,7 +138,8 @@ export function Projects() {
             type: 'Landing Page',
             stack: ['react', 'figma', 'tailwindcss',],
             description:' A fictional bed and breakfast site built to showcase clean layout, soft visuals, and user focused design with a strong focus on responsiveness.',
-            show:true
+            show:true,
+            development:false
         },
         {
             id: 1,
@@ -165,8 +161,21 @@ export function Projects() {
             type: 'Landing Page',
 			stack: ['react', 'figma', 'node', 'tailwindcss',],        
             description:"A showcase site for a real lodge, built to demonstrate how strong design and structure can boost bookings and reflect the brand’s unique charm.",
-            show:true
+            show:true,
+            development:false
 
+        },
+        {
+            id: 2,
+            name: "Salt&Light Blog",
+            github: "https://github.com/softwareNinja-888/salt_light_blog",
+            link: "https://salt-light-blog.vercel.app/",
+            img: '/projects/mockupBlog.avif',
+            type: 'Full Stack Blog',
+            stack: ['react', 'figma', 'node','sql','express', 'tailwindcss',],        
+            description:'A Full Stack Christian blog where I write and publish Bible based content. Built to reflect my values while showcasing my end-to-end development skills.',
+            show:true,
+            development:true
         },
     ];
 

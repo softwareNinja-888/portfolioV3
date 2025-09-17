@@ -131,8 +131,7 @@ export function Footer() {
                     >
                         <h3 className="text-white text-xl font-bold">About Me</h3>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            Full-stack developer passionate about creating beautiful, functional web applications. 
-                            Always learning and exploring new technologies.
+                            I'm a web developer who loves building applications that look great and work even better. Let's create something amazing together!
                         </p>
                     </motion.div>
 
@@ -193,11 +192,11 @@ export function Footer() {
                             </div>
                             <div className="flex items-center gap-3">
                                 <Phone className="w-4 h-4 text-primary" />
-                                <span className="text-gray-400 text-sm"><a href="tel:+26878381430">+268 78381430</a> </span>
+                                <span className="text-gray-400 text-sm">+268 78381430</span>
                             </div>
                             <div className="flex items-center gap-3">
                                 <Mail className="w-4 h-4 text-primary" />
-                                <span className="text-gray-400 text-sm"><a href="mailto:webdev.bybayanda@gmail.com">webdev.bybayanda@gmail.com</a></span>
+                                <span className="text-gray-400 text-sm">webdev.bybayanda@gmail.com</span>
                             </div>
                         </div>
                     </motion.div>
@@ -240,9 +239,7 @@ export function Footer() {
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             className="flex items-center gap-2 text-gray-400 text-sm"
                         >
-                            <span>© 2025 Bayanda Dlamini. Made with</span>
-                            <Heart className="w-4 h-4 text-red-500 fill-current" />
-                            <span>and lots of coffee</span>
+                            <span>© 2025 Bayanda Dlamini.</span>
                         </motion.div>
                      
                     </div>

@@ -10,7 +10,7 @@ export function Header() {
   const links = [
     { id: 0, name: 'About', href: 'about' },
     { id: 4, name: 'Tech Stack', href: 'tech' },
-    { id: 1, name: 'Experience', href: 'xp' },
+    { id: 1, name: 'Experience', href: 'experience' },
     { id: 2, name: 'Projects', href: 'projects' },
     { id: 3, name: 'Contact', href: 'contact' },
   ];

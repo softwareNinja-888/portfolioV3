@@ -124,7 +124,7 @@ export function Xp() {
     ];
 
     return (
-        <section id="xp" className="py-20 bg-bg overflow-x-hidden">
+        <section id="experience" className="py-20 bg-bg overflow-x-hidden">
             <div className="max-w-6xl mx-auto px-6">
                 {/* Section Header */}
                 <motion.div
